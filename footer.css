@@ -1,0 +1,207 @@
+@import url("https://fonts.googleapis.com/css2?family=Mulish&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Padauk:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Odibee+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Odibee+Sans&family=Open+Sans+Condensed:wght@300&family=Oswald&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Mulish&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Padauk:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@500&family=Noto+Serif:wght@400;700&family=Odibee+Sans&family=Open+Sans+Condensed:wght@300&family=Oswald&display=swap");
+/* font-family: 'Mulish', sans-serif; */
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --clr-main: #112935;
+  --clr-bg-hover: #163241;
+  --clr-a-border: hsla(0, 0%, 100%, 0.733);
+  --clr-btn: rgba(0, 0, 0, 0);
+  --clr-btn-hover: rgba(20, 20, 20, 0.397);
+}
+
+body {
+  /* background: linear-gradient(#16222A, #3A6073), url(./images/robo-bg.jpg) ;
+    background-blend-mode: multiply;
+    background-attachment: fixed;
+    background-position: fixed;
+    background-repeat: no-repeat;
+    background-size: cover; */
+   color: black;
+  /* position: relative; */
+}
+
+footer {
+    font-family: "Padauk", sans-serif;
+    letter-spacing: 2px;
+}
+
+footer .col-container {
+  height: 400;
+  /* background-color:hsl(233, 47%, 7%); */
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)),url(https://image.freepik.com/free-photo/robot-head-dark-surface_407240-293.jpg),
+    linear-gradient(#16222a, #3a6073);
+  background-blend-mode: overlay;
+  /* opacity: ; */
+  padding: 3rem 2rem 1rem;
+  font-size: 1.025rem;
+  color: rgb(218, 216, 216);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+footer .container {
+  width: 100%;
+  max-width: 1200px;
+  display: grid;
+  grid-template-columns: 1.5fr 1fr 1fr;
+  gap: 2rem;
+  padding-bottom: 12px;
+}
+
+footer .container ul {
+  list-style: none;
+}
+
+footer .container ul > li {
+  line-height: 2.25;
+  /* letter-spacing: 3px; */
+}
+
+footer .about,
+.contact-us,
+.quick-links {
+  /* margin: 0 2rem; */
+  /* line-height: 1rem; */
+  font-family: "Noto Serif", serif;
+}
+
+footer .about h2,
+.contact-us h2,
+.quick-links h2 {
+  margin-bottom: 2rem;
+  position: relative;
+  font-size: 1.75rem;
+  color: hsla(0, 0%, 100%, 0.671);
+}
+
+footer .about h2::after,
+.contact-us h2::after,
+.quick-links h2::after {
+  content:'';
+  width:60%;
+  height: 2px;
+  background: linear-gradient(to right,white 20%, grey 20%, grey);
+  position: absolute;
+  top:147%;
+  left:0;
+}
+
+footer .about h2::after{
+  width:40%;
+}
+
+footer .item-center-one {
+  font-size: 1.15rem;
+  color: rgb(231, 229, 229);
+  /* margin-bottom: 0.25rem; */
+  font-weight: bold;
+}
+
+footer .divider {
+  height: 1px;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.3);
+  margin: 12px 0;
+}
+
+footer .fas,
+footer .fab {
+  margin-right: 12px;
+  font-size: 1.25rem;
+  /* display: inline-block; */
+  /* padding: 12px 0; */
+  /* color: hsla(0, 0%, 100%, 0.671); */
+}
+
+/* .item-center .fa-home {
+      color: rgb(40, 11, 143);
+  }
+  
+  .item-center .fa-map-marker-alt {
+      color: red;
+  } */
+
+footer a {
+  color: rgb(218, 216, 216);
+  transition: 0.3s ease-in-out;
+}
+
+/* footer .mobile-no .fas {
+      color: rgb(15, 155, 202);
+  } */
+
+/* footer .whatsapp-no .fab {
+      height: 25px;
+      width: 25px;
+      background-color: rgb(21, 196, 21);
+      line-height: 24px;
+      text-align: center;
+      border-radius: 50%;
+      padding: 0 3px;
+  } */
+
+/* footer .e-mail .fas {
+      color:rgb(7, 88, 182);
+  } */
+
+footer .mobile-no,
+.e-mail,
+.whatsapp-no {
+  letter-spacing: 0px;
+}
+
+footer .copyright {
+  font-weight: 100;
+  color: hsl(0, 1%, 63%);
+  width: 100%;
+  text-align: center;
+  padding: 8px 0;
+  background: black;
+  font-size: 1.25rem;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+footer .social-links {
+  display: flex;
+  flex-direction: row;
+  gap: 3rem;
+  font-size: 2rem;
+  margin-top: 16px;
+}
+
+footer .social-links a{
+  border-radius: 50%;
+  border: 1px solid grey;
+  width:50px;
+  height:50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+footer .social-links a i{
+  margin: 0px;
+  margin-right: -3px;
+}
+
+footer a:hover {
+  color: #a1a1a1;
+}
